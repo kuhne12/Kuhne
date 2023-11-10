@@ -1,0 +1,680 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>毕业论文选题</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="3bcaf7e2-00ef-4afc-9f06-84fe595b5e39" class="page sans"><header><h1 class="page-title">毕业论文选题</h1><p class="page-description"></p></header><div class="page-body"><h2 id="46c0bc32-9f4e-48b1-ac55-023c593b76bd" class="">可选方向：</h2><ol type="1" id="298476e0-fac9-4652-bd07-b1085bd4c19b" class="numbered-list" start="1"><li>视频问答（Video Question Answering）</li></ol><ol type="1" id="b828d548-1344-4b58-9203-f1431a259438" class="numbered-list" start="2"><li>视觉问答 / 医学视觉问答 （Vision Question Answering）</li></ol><ol type="1" id="b01bf8fe-5169-4f93-8353-a95b21b3491f" class="numbered-list" start="3"><li>报告生成 / 医学报告生成 （Caption）</li></ol><ol type="1" id="f9c56842-1ef1-454c-9f0b-9b653f53a7fe" class="numbered-list" start="4"><li>3D dence 报告生成（Dence 3D caption）</li></ol><ol type="1" id="9a0a7d38-3c9d-44a4-91d9-71c01c4ea105" class="numbered-list" start="5"><li>(3D) 图像生成 （Text to Image）</li></ol><p id="3af438ac-65eb-469c-bbe6-830610167f1d" class="">
+</p><h2 id="95bf4918-8f83-459d-9c5a-ede920237471" class="">开发框架</h2><ul id="6b0a069c-0be8-49c2-9150-43522eeff7f2" class="bulleted-list"><li style="list-style-type:disc"><a href="https://gradio.app/"><mark class="highlight-red"><strong>Gradio </strong></mark></a><mark class="highlight-red"><strong>(重点关注)：</strong></mark><ul id="7c79839e-3755-4ff2-8f76-e1f7c52f096e" class="bulleted-list"><li style="list-style-type:circle">一个用于快速创建机器学习界面的开源 Python 库。</li></ul><ul id="224519d9-77b7-4cb0-a396-66de05bda9cf" class="bulleted-list"><li style="list-style-type:circle">Gradio 可以用于构建各种交互式界面，包括文本、图像、音频和视频输入的界面。它支持通过简单的 API 调用来添加输入和输出元素，无需复杂的前端代码。</li></ul></li></ul><ul id="329c3c00-06b7-4eb1-a1dd-51ce31521aa7" class="bulleted-list"><li style="list-style-type:disc"><a href="https://pytorch.org/"><strong>Pytorch</strong></a><strong>：</strong><ul id="b7404bb9-b159-472e-8550-aa266eb66ed1" class="bulleted-list"><li style="list-style-type:circle">PyTorch（Python Torch）是一个开源的深度学习框架。</li></ul><ul id="bf990f61-d0e3-4c3b-9391-439e39297285" class="bulleted-list"><li style="list-style-type:circle">它提供了一个灵活且动态的计算图，以及丰富的工具和库，使得深度学习任务更加便捷。</li></ul></li></ul><ul id="2436c4c4-184e-4c6c-b315-e023ca0ad621" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.djangoproject.com/"><strong>Django</strong></a><strong>: </strong><ul id="aa677143-5666-4279-8b31-d8de13e8c08e" class="bulleted-list"><li style="list-style-type:circle">Django 是一个用于构建 Web 应用程序的开源 Python Web 框架。</li></ul><ul id="65c1372d-e8a0-47fe-af25-7c33f960449b" class="bulleted-list"><li style="list-style-type:circle">Django 的目标是使开发者能够快速构建健壮、可维护且易于扩展的 Web 应用程序。因此，它通常被广泛用于需要迅速开发和部署的项目，如内容管理系统、博客平台、电子商务网站等。</li></ul></li></ul><p id="b6fe9a69-007b-4284-8748-486e63d480a1" class="">
+</p><h2 id="8576d820-3c10-49f1-ae1e-32d081bae881" class="">几个案例</h2><ul id="75931c6f-aa48-43e9-8616-3adca39f7b51" class="bulleted-list"><li style="list-style-type:disc"><strong>Video QA</strong><figure id="8f4d6d9a-5eef-47e7-b075-5ec1099cf3bf"><a href="https://huggingface.co/spaces/SeViLA/SeViLA" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">SeViLA Demo - a Hugging Face Space by SeViLA</div><div class="bookmark-description">Discover amazing ML apps made by the community</div></div><div class="bookmark-href"><img src="https://huggingface.co/favicon.ico" class="icon bookmark-icon"/>https://huggingface.co/spaces/SeViLA/SeViLA</div></div><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/SeViLA/SeViLA.png" class="bookmark-image"/></a></figure></li></ul><ul id="ff745349-bb36-46a9-bd14-17781738005c" class="bulleted-list"><li style="list-style-type:disc"><strong>Image(Medical) Caption</strong><figure id="a033beab-0c8d-4b57-81b5-4b173007d279"><a href="https://huggingface.co/spaces/radames/Candle-BLIP-Image-Captioning" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Candle BLIP Image Captioning - a Hugging Face Space by radames</div><div class="bookmark-description">Discover amazing ML apps made by the community</div></div><div class="bookmark-href"><img src="https://huggingface.co/favicon.ico" class="icon bookmark-icon"/>https://huggingface.co/spaces/radames/Candle-BLIP-Image-Captioning</div></div><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/radames/Candle-BLIP-Image-Captioning.png" class="bookmark-image"/></a></figure></li></ul><ul id="49403355-f976-419f-9f0a-baca039a7c57" class="bulleted-list"><li style="list-style-type:disc"><strong>Visual(Medical) Question Answering</strong><figure id="25b66f0b-15d2-4750-b540-d0e512fb685c"><a href="https://huggingface.co/spaces/OFA-Sys/OFA-vqa" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">OFA-Visual_Question_Answering - a Hugging Face Space by OFA-Sys</div><div class="bookmark-description">Discover amazing ML apps made by the community</div></div><div class="bookmark-href"><img src="https://huggingface.co/favicon.ico" class="icon bookmark-icon"/>https://huggingface.co/spaces/OFA-Sys/OFA-vqa</div></div><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/OFA-Sys/OFA-vqa.png" class="bookmark-image"/></a></figure></li></ul><ul id="be815168-2f21-43b7-9f9e-ccb1d52d8d82" class="bulleted-list"><li style="list-style-type:disc"><strong>Text to Image(3D)</strong><figure id="f85cdc2a-44f4-49cf-ae09-e60cb4ab081a"><a href="https://huggingface.co/spaces/prodia/fast-stable-diffusion" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Fast Stable Diffusion - a Hugging Face Space by prodia</div><div class="bookmark-description">Discover amazing ML apps made by the community</div></div><div class="bookmark-href"><img src="https://huggingface.co/favicon.ico" class="icon bookmark-icon"/>https://huggingface.co/spaces/prodia/fast-stable-diffusion</div></div><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/prodia/fast-stable-diffusion.png" class="bookmark-image"/></a></figure></li></ul><p id="03d46fca-3415-4a01-b182-3bbfdd6fade7" class="">
+</p><figure class="block-color-blue callout" style="white-space:pre-wrap;display:flex" id="71be58c9-a17b-4b7a-b657-2ae8f6141dbc"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">上方的四个链接是可交互的算法模型（托管在 Hugging Face 上，都是通过 Gradio 实现的），用于帮助快速理解任务，你可以根据自己的兴趣或者能力来选择一个具体方向，除了这四个链接以外，也可以在 <a href="https://huggingface.co/spaces">Hugging face space </a>中找自己感兴趣的算法来进行体验。另外在 Gradio 官网中，也可以体验 Gradio 提供的 <a href="https://www.gradio.app/playground">Demo</a>（代码 + 交互页面），边体验边学习。</div></figure><h2 id="613af437-298c-4793-afcc-e23885f2fc60" class="">内容拓展<strong>思路</strong></h2><p id="01d0d097-f75c-46a3-ace7-cc9aaff0b7d1" class="">为了让论文的内容更充实，除了这些基本的算法实现之外建议朝以下两个方向做拓展：</p><ol type="1" id="8523ffcf-7f8f-4067-ba3d-50617076b498" class="numbered-list" start="1"><li><strong>增加业务内容</strong><p id="f10be977-682d-48c1-ac52-699e6a551301" class="">搭建一个具有一定业务流程的系统，比如用户注册、登录、管理、具体算法的使用等；</p></li></ol><ol type="1" id="beec83a1-a7a1-4d80-9d96-4f7f45d11591" class="numbered-list" start="2"><li><strong>模型优化</strong><p id="11956490-1e0d-4533-819c-459661825402" class="">着重描述算法模型，阐述算法模型结构、工作流程、创新点，或在你引用的模型之上增加自己的想法，对算法模型做优化；</p></li></ol><figure class="block-color-blue callout" style="white-space:pre-wrap;display:flex" id="ad4d9773-bfe9-44af-be22-493f56197258"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">如果自己有别的拓展思路也可以尝试实现，以上两种想法只是提供参考。建议选定方向后，在 GitHub 中寻找是否有可以学习的项目，利用现成的算法开始上手。</div></figure><p id="2ab7dd40-ccdc-44ed-87cb-95a252a5487e" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
